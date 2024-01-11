@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400,700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+    display: block;
+    font-size: 14px;
+    background-color: hsl(230, 17%, 14%);
+    position: relative; /* Add relative positioning to .main */
+    z-index: 1; /* Ensure .main is stacked above other elements */
+}
+.top-bar{
+    display: flex;
+    height: 25vh;
+    background-color:  hsl(232, 19%, 15%);
+    justify-content: space-between;
+    padding: 20px;
+    position: relative; /* Add relative positioning to .top-bar */
+    z-index: 2; /* Ensure .top-bar is stacked above .main */
+    margin: auto;
+}
+.title h1{
+    color: white;
+    font-weight: 700;
+    margin-top: 50px;
+    margin-left: 130px;
+}
+.title p{
+    color: hsl(228, 34%, 66%);
+    font-weight: 700;
+    margin-left: 130px;
+}
+.toggle {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.toggle h3 {
+    color: white;
+    display: flex;
+    align-items: center; 
+    font-size: 14px;
+}
+
+.fa-toggle-off {
+    /* Use a linear gradient for the color */
+    background: linear-gradient(to right, hsl(163, 72%, 31%), hsl(163, 72%, 51%) );
+    -webkit-background-clip: text;
+    color: transparent; 
+    font-size: 34px;
+    margin-right: 100px;
+    cursor: pointer;
+    padding-left: 10px;
+}
+.card-holders{
+    display: flex;
+    width: 80vw;
+    margin: auto;
+    justify-content: space-between;
+    position: relative; /* Add relative positioning */
+    top: -50px; /* Adjust the negative value based on your design */
+    z-index: 3;
+    text-align: center;
+}
+.fb-social{
+    background: hsl(228, 28%, 20%);
+    width: 250px;
+    height: 200px;
+    border-radius: 7px;
+    border-top: 5px solid hsl(208, 92%, 53%);
+}
+.link{
+    margin-top: 27px;
+    color: hsl(228, 34%, 66%);
+    font-weight: 700; 
+    margin-bottom: 20px;
+}
+.followers{
+    color: white;
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.followers-1{
+    font-weight: 700;
+    font-size: 10px;
+    margin-bottom: 45px;
+    letter-spacing: 5px;
+    color: hsl(228, 34%, 66%);
+}
+.up{
+    font-weight: 700;
+    color: hsl(163, 72%, 41%);
+    font-size: 10px;
+    margin-top: 20px;
+}
+.x-social{
+    background: hsl(228, 28%, 20%);
+    width: 250px;
+    height: 200px;
+    border-radius: 7px;
+    border-top: 5px solid hsl(208, 92%, 53%);
+}
+.ig-social{
+    background: hsl(228, 28%, 20%);
+    width: 250px;
+    height: 200px;
+    border-radius: 7px;
+    border-top: 5px solid hsl(329, 70%, 58%);
+}
+.youtube-social{
+    background: hsl(228, 28%, 20%);
+    width: 250px;
+    height: 200px;
+    border-radius: 7px;
+    border-top: 5px solid hsl(356, 69%, 56%);
+}
+.down{
+    color: hsl(356, 69%, 56%);
+    font-weight: 700;
+}
+
+.bottom-bar{
+    display: block;
+    width: 80vw;
+    margin: auto;
+}
+.bottom-bar h2{
+    color: white;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.flexing-1{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.flexing{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+.fb-3{
+    display: block;
+    width: 300px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: hsl(228, 28%, 20%);
+    color: white;
+    font-weight: 700;
+}
+.upper-row{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px 10px 20px;
+    color: hsl(228, 34%, 66%);;
+}
+.number{
+    color: white;
+}
+.lower-row{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px 0 20px;
+    color: hsl(163, 72%, 41%);
+}

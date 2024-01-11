@@ -7,6 +7,18 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
+    <style>
+        body {
+          background-color: hsl(230, 17%, 14%);
+          color: black;
+        }
+    
+        .dark-mode {
+          background-color: white;
+          color: black;
+        }
+      </style>
+
 </head>
 
 <body>
@@ -20,7 +32,7 @@
             </div>
             <div class="toggle">
                 <div><h3>Dark Mode</div>
-                <div><i class="fa-solid fa-toggle-off"></i></div>                    
+                <div><i class="fa-solid fa-toggle-off" onclick="myFunction()"></i></div>                    
                 </h3>
             </div>
         </div>
@@ -243,5 +255,20 @@
 
         
     </div>
+    <button >Toggle dark mode</button>
+
+    <script>
+        function myFunction() {
+          var element = document.body;
+          element.classList.toggle("dark-mode");
+    
+          // Toggle dark mode for h3 element
+          var h3Element = document.querySelector("h3");
+          h3Element.classList.toggle("dark-mode");
+
+          var topbarElement = document.querySelector("top-bar");
+          topbarElement.classList.toggle("dark-mode");
+        }
+      </script>
 </body>
 </html>

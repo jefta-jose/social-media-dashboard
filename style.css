@@ -14,6 +14,8 @@ body {
     position: relative; /* Add relative positioning to .main */
     z-index: 1; /* Ensure .main is stacked above other elements */
 }
+
+
 .top-bar{
     display: flex;
     height: 25vh;
@@ -58,6 +60,44 @@ body {
     cursor: pointer;
     padding-left: 10px;
 }
+@media (max-width: 500px) {
+    .top-bar {
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+    .title h1{
+        color: white;
+        font-weight: 700;
+        font-size: 20px;
+        margin-top: 30px;
+    }
+
+    .toggle {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin: auto;
+        border-top: 2px solid gray;
+    }
+    .toggle h3 {
+        color: white;
+        display: flex;
+        align-items: center; 
+        font-size: 14px;
+    }
+    
+    .fa-toggle-off {
+        /* Use a linear gradient for the color */
+        background: linear-gradient(to right, hsl(163, 72%, 31%), hsl(163, 72%, 51%) );
+        -webkit-background-clip: text;
+        color: transparent; 
+        font-size: 34px;
+        cursor: pointer;
+    }
+}
+
+/* chard holders*****************/
 .card-holders{
     display: flex;
     width: 80vw;
@@ -126,6 +166,49 @@ body {
     font-weight: 700;
 }
 
+/* card holder responsiveness*/
+@media(max-width: 500px){
+    .card-holders{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .fb-social{
+        background: hsl(228, 28%, 20%);
+        width: 100%;
+        height: 200px;
+        border-radius: 7px;
+        border-top: 5px solid hsl(208, 92%, 53%);
+        margin-bottom: 10px;
+    }
+    .x-social{
+        background: hsl(228, 28%, 20%);
+        width: 100%;
+        height: 200px;
+        border-radius: 7px;
+        border-top: 5px solid hsl(208, 92%, 53%);
+        margin-bottom: 10px;
+    }
+    .ig-social{
+        background: hsl(228, 28%, 20%);
+        width: 100%;
+        height: 200px;
+        border-radius: 7px;
+        border-top: 5px solid hsl(208, 92%, 53%);
+        margin-bottom: 10px;
+    }
+    .youtube-social{
+        background: hsl(228, 28%, 20%);
+        width: 100%;
+        height: 200px;
+        border-radius: 7px;
+        border-top: 5px solid hsl(208, 92%, 53%);
+        margin-bottom: 10px;
+    }
+}
+
+
 .bottom-bar{
     display: block;
     width: 80vw;
@@ -171,4 +254,28 @@ body {
     justify-content: space-between;
     margin: 0 20px 0 20px;
     color: hsl(163, 72%, 41%);
+}
+
+@media(max-width: 500px){
+    .bottom-bar{
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+    .flexing-1{
+        display: block;
+    }
+    .flexing{
+        display: block;
+    }
+    .fb-3{
+        display: block;
+        width: 100%;
+        height: 150px;
+        border-radius: 10px;
+        background-color: hsl(228, 28%, 20%);
+        color: white;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
 }
